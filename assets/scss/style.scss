@@ -250,9 +250,9 @@ body{
     display: block;
     margin: auto;
 }
-/*Info section END */
+/* #########Info section END */
 
-/* Galerijos section START */
+/* ##########Galerijos section START */
 
 .memories-container {
 	width: 100vw;
@@ -290,4 +290,36 @@ body{
     padding: 0 10px;
 	font-size: 0.875rem;
 	color: #65645f;
+}
+
+.gallery-container {
+	width: 100%;
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+}
+.gallery-pic-container {
+	width: 25%;
+	position: relative;
+}
+.gallery-pic-container img{
+	width: 100%;
+	display: block;
+}
+.gallery-pic-container h3{
+
+	position: absolute;
+	top:12%;
+	left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.125rem;
+    color: #fff;
+    letter-spacing: -0.5px;
+    text-transform: capitalize;
+    font-weight: 300;
+}
+
+.gallery-pic-container h3 span {
+	font-weight: 800;
+    color: #0d9a50;
 }
