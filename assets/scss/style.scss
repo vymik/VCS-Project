@@ -1,0 +1,254 @@
+@import "reset";
+
+@import "fonts"; 
+
+html {
+	font-size: 16px;
+	font-family: Raleway, sans-serif;
+}
+ul,
+body{
+	margin: 0;
+	padding: 0;
+}
+.flex-container{
+	display: flex;
+}
+
+/*top menu*/
+.top-menu {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0;
+	padding-bottom: 10px;
+	position: fixed;
+	top:0px;
+	width: 100vw;
+	z-index: 9999;
+	height: 70px;
+
+}
+.top-menu ul {
+	display: flex;
+	list-style: none;
+}
+ .top-menu li a {
+	text-decoration: none;
+	text-transform: uppercase;
+	color: white;
+	font-size: 0.8125rem;
+	letter-spacing: 0.4px;
+    font-weight: 700;
+    line-height: 30px;
+    height: 30px;
+    padding: 0px 25px;
+    margin: 20px 0px;   
+}
+.top-menu li a:hover {
+	color: #0d944f;
+}
+
+/*top menu end*/
+
+/*HERO start*/
+.hero .container {
+	display: flex;
+	max-width: 50%;
+	margin: 0 auto;
+	min-height: 100vh;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+.hero {
+	min-height: 100vh;
+	background: url(../images/flowers.jpg) no-repeat center center;
+	background-size: cover;
+	background-position: center;
+	padding: 0;
+	text-align: center;
+	position:relative;
+}
+.hero-content {
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+	border: 8px solid white;
+	background-color: #cbdbbe;
+	padding: 20px 60px;
+}
+.hero-content h2 {
+	color: #0d944f;
+	text-transform: uppercase;
+	font-size: 1.25rem;
+	padding: 0;
+	margin: 0;
+	font-weight: 900;
+	line-height: 30px;
+}
+.hero-content h1 {
+	font-weight: 300;
+    font-family: 'Dancing Script', cursive;
+    font-size: 6vw;
+    margin: 0;
+    color: white;  
+}
+
+.hero-content img {
+	width: 100%;
+}
+
+
+.hero-content p {
+	color: #0d944f;
+	font-size: 1.875rem;
+	width: 100%;
+}
+.container i{
+	position: absolute;
+	bottom: 10px;
+	font-size: 1.5rem;
+	color: white;
+}
+/* HERO pabaiga */
+.about-us {
+	min-height: 100vh;
+	background: white;
+	background-size: cover;
+	background-position: center;
+	padding: 0;
+	text-align: center;
+}
+.about-us-container{
+	max-width: 960px; 
+	margin: 0 auto; 
+}
+.about-us-container h2{
+	font-size: 2.5rem;
+	letter-spacing: -1px;
+	font-weight: 900;
+	line-height: 45px;
+	color: #454545;
+}
+.about-us-container h2 span {
+	font-family: 'Clicker Script', cursive;
+	font-weight: 400;
+	color: #0d9a50;
+}
+
+.heading {
+	padding:100px 0 60px 0;
+}
+
+
+.about-us-container .heading p {
+    font-weight: 400;
+    padding: 0 20px;
+    margin: 0 auto;
+    text-align: center;
+    color: #646464;
+    border-bottom: 1px solid #0d9a50;
+    line-height: 0.1rem;
+    display: inline-block;
+}
+.about-us-container  .heading  p span {
+	background-color: #fff;
+    padding: 0 10px;
+	font-size: 0.875rem;
+	color: #65645f;
+}
+.about-us-container .she-he {
+	width: 100%;
+	display: flex;
+	flex-wrap:wrap;
+	justify-content:space-between;
+}
+.she-he .about-column{
+	width: 48%;
+}
+.about-pic {
+	position: relative;
+	padding:0px;
+	margin:0px;
+	margin:auto;
+	text-align:center;
+}
+.about-pic img {
+	width:75%;
+}
+.round-pic {
+	border-radius: 50%;
+}
+.pic-frame {
+	position: absolute;
+    bottom: -4%;
+    z-index: 999;
+}
+
+.socials img{
+	border-radius: 50%;
+	border: 1px solid #f7f7f7;
+	background-color: #f7f7f7;
+}
+.about-column h3 {
+	margin: 0;
+	padding: 60px 0 20px 0;
+	font-size: 1.125rem;
+	font-weight: 900;
+	color: #454545;
+}
+.about-column p {
+	color: #65645f;
+	margin: 0;
+	padding-bottom: 20px;
+}
+/* about us section END */
+
+/*Timer section START */
+.timer-container {
+	background-color: #edfcff;
+	padding: 120px 0;
+}
+.timer-container h2 {
+	text-transform: uppercase;
+	text-align: center;
+	color: #92b476;
+	font-size: 1.75rem;
+	padding: 0 0 40px 0;
+	font-weight: 700;
+}
+/*Timer section END */
+
+/*Info section START */
+.info-container {
+	max-width: 1200px; 
+	margin: 0 auto; 
+	display: flex;
+	text-align: center;
+}
+.info-column {
+	justify-content: space-between;
+	width: 30.66%;
+	margin:80px 4% 80px 0;
+}
+.info-column:nth-child(3n) {
+	margin:80px 0 80px 0;
+}
+.info-column h3 {
+	text-transform: uppercase;
+	font-size: 1.25rem;
+	color: #454545;
+	font-weight: 700;
+}
+.info-column p {
+	color: #65645f;
+	font-size: 0.875rem;
+}
+.info-column img {
+	width: 50px;
+    display: block;
+    margin: auto;
+}
+/*Info section END */
+
