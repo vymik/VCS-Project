@@ -533,11 +533,13 @@ body {
 .gallery-pic-container {
   width: 25%;
   position: relative;
+  background: black;
 }
 
 .gallery-pic-container img {
   width: 100%;
   display: block;
+  opacity: 0.5;
 }
 
 .gallery-pic-container h3 {
