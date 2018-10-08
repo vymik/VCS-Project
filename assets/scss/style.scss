@@ -108,8 +108,25 @@ body{
 .container i{
 	position: absolute;
 	bottom: 10px;
-	font-size: 1.5rem;
+	font-size: 2rem;
 	color: white;
+}
+.bounce {	/* rodykles sokinejimas*/
+  -moz-animation: bounce 2s infinite;
+  -webkit-animation: bounce 2s infinite;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
 }
 /* HERO pabaiga */
 .about-us {
@@ -385,6 +402,7 @@ body{
     font-weight: 800;
     color: #454545;
     margin: 13px 0 6px 0;
+    text-transform: uppercase;
 }
 
 .carousel-column p{
