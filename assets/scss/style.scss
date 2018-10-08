@@ -188,6 +188,8 @@ body{
 
 .about-pic img {
 	width:100%;
+	transition: 0.5s;
+	-webkit-transition: -webkit-transform 0.5s;
 }
 .inner-round-border img:hover{
 	transform: scale(1.2);
@@ -204,10 +206,19 @@ body{
     z-index: 999;
 }
 
+.socials a{
+	text-decoration: none;
+}
 .socials img{
 	border-radius: 50%;
 	border: 1px solid #f7f7f7;
 	background-color: #f7f7f7;
+	-webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.socials img:hover{
+	background-color: white;
 }
 .about-column h3 {
 	margin: 0;
