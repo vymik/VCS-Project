@@ -1,8 +1,6 @@
 $(document).ready(function(){
 	console.log("pavyko");
 
-$(".owl-carousel").owlCarousel();
-
 $('.owl-carousel').owlCarousel({
     loop:true,
     margin:10,
@@ -15,7 +13,7 @@ $('.owl-carousel').owlCarousel({
             items:3
         },
         1000:{
-            items:5
+            items:4
         }
     }
 })

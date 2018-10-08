@@ -125,7 +125,7 @@ body{
 	width: 70%; 
 	margin: 0 auto; 
 }
-.about-us-container h2{
+.heading h2{
 	font-size: 2.5rem;
 	letter-spacing: -1px;
 	font-weight: 900;
@@ -133,7 +133,7 @@ body{
 	color: #454545;
 	margin:0;
 }
-.about-us-container h2 span {
+.heading h2 span {
 	font-family: 'Clicker Script', cursive;
 	font-weight: 400;
 	color: #0d9a50;
@@ -141,10 +141,11 @@ body{
 
 .heading {
 	padding:5% 0 5% 0;
+	text-align: center;
 }
 
 
-.about-us-container .heading p {
+.heading p {
     font-weight: 400;
     padding: 0 20px;
     margin: 0 auto;
@@ -154,7 +155,7 @@ body{
     line-height: 0.1rem;
     display: inline-block;
 }
-.about-us-container  .heading  p span {
+.heading  p span {
 	background-color: #fff;
     padding: 0 10px;
 	font-size: 0.875rem;
@@ -375,4 +376,21 @@ body{
 .section-centered {
 	width: 70%; 
 	margin: 0 auto; 
+	text-align: center;
+}
+
+.carousel-column h3{
+	font-size: 0.9375rem;
+    letter-spacing: 0.5px;
+    font-weight: 800;
+    color: #454545;
+    margin: 13px 0 6px 0;
+}
+
+.carousel-column p{
+
+	color: #0d9a50;
+	font-size: 0.8125rem;
+    font-weight: 300;
+    margin: 7px 0 13px 0;
 }
