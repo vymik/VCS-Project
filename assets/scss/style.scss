@@ -353,6 +353,7 @@ body{
 	position: relative;
 	background: rgba(0, 0, 0, 1);	
 }
+
 .gallery-pic-container:hover{
 	background: none;
 
@@ -360,7 +361,7 @@ body{
 .gallery-pic-container img{
 	width: 100%;
 	display: block;
-	opacity: 0.5;	
+	opacity: 0.5;
 }
 .gallery-pic-container img:hover{
 	opacity: 1;
@@ -395,6 +396,9 @@ body{
 	width: 70%; 
 	margin: 0 auto; 
 	text-align: center;
+}
+.section-centered .heading p span{
+	background-color: #f6f6f4;
 }
 
 .carousel-column h3{

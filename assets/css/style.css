@@ -648,6 +648,10 @@ body {
   text-align: center;
 }
 
+.section-centered .heading p span {
+  background-color: #f6f6f4;
+}
+
 .carousel-column h3 {
   font-size: 0.9375rem;
   letter-spacing: 0.5px;
