@@ -17,6 +17,7 @@ body{
 
 /*top menu*/
 .top-menu {
+	background-color: none;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -47,6 +48,13 @@ body{
 }
 .top-menu li a:hover {
 	color: #0d944f;
+}
+.menugrey {
+	background-color:#f8f8f8; 
+	color:#373a38 !important; 
+}
+.active{
+	color: #0d944f !important;
 }
 
 /*top menu end*/
