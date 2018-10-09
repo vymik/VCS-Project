@@ -249,6 +249,10 @@ body {
   color: #0d944f !important;
 }
 
+.menugrey li a:hover {
+  color: #0d944f !important;
+}
+
 /*top menu end*/
 /*HERO start*/
 .hero .container {
@@ -387,7 +391,7 @@ body {
 }
 
 .heading {
-  padding: 5% 0 5% 0;
+  padding: 140px 0 5% 0;
   text-align: center;
 }
 
@@ -556,45 +560,6 @@ body {
 .memories-container {
   width: 100vw;
   margin: 0 auto;
-}
-
-.gallery-heading {
-  text-align: center;
-  padding: 60px;
-}
-
-.gallery-heading h2 {
-  font-size: 2.5rem;
-  letter-spacing: -1px;
-  font-weight: 900;
-  line-height: 45px;
-  color: #454545;
-  padding-bottom: 10px;
-  margin: 0;
-}
-
-.gallery-heading h2 span {
-  font-family: 'Clicker Script', cursive;
-  font-weight: 400;
-  color: #0d9a50;
-}
-
-.gallery-heading p {
-  font-weight: 400;
-  padding: 0 20px;
-  margin: 0 auto;
-  text-align: center;
-  color: #646464;
-  border-bottom: 1px solid #0d9a50;
-  line-height: 0.1rem;
-  display: inline-block;
-}
-
-.gallery-heading p span {
-  background-color: #fff;
-  padding: 0 10px;
-  font-size: 0.875rem;
-  color: #65645f;
 }
 
 .gallery-container {
