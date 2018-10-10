@@ -656,6 +656,7 @@ body {
 }
 
 /* ##########Galerijos section END */
+/* ##########Carousel section START */
 .carousel-section {
   width: 100vw;
   background-color: #f6f6f4;
@@ -686,3 +687,5 @@ body {
   font-weight: 300;
   margin: 7px 0 13px 0;
 }
+
+/* ##########Carousel section END */
