@@ -273,7 +273,10 @@ body {
 
 .hero {
   min-height: 100vh;
-  background: url(../images/flowers.jpg) no-repeat center center;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(../images/hero3.jpg);
+  background: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/hero3.jpg);
+  background: -o-linear-gradient(bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/hero3.jpg);
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/hero3.jpg);
   background-size: cover;
   background-position: center;
   padding: 0;
@@ -286,7 +289,6 @@ body {
   margin: 0 auto;
   text-align: center;
   border: 8px solid white;
-  background-color: #cbdbbe;
   padding: 20px 60px;
 }
 
@@ -309,7 +311,7 @@ body {
 }
 
 .hero-content img {
-  width: 100%;
+  width: 65%;
 }
 
 .hero-content p {
@@ -372,7 +374,7 @@ body {
 }
 
 .about-us-container {
-  width: 70%;
+  width: 60%;
   margin: 0 auto;
 }
 
