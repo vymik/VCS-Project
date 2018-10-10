@@ -1,6 +1,12 @@
 $(document).ready(function(){
 	console.log("pavyko");
+// ######## BURGER MENU START ############
+$('.burger').click(function(){
+  $('.nav').toggleClass('show');
+});
+// ######## BURGER MENU END ############
 
+// ######## OWL CAROUSEL START #########
 $('.owl-carousel').owlCarousel({
     loop:true,
     margin:10,
@@ -17,6 +23,7 @@ $('.owl-carousel').owlCarousel({
         }
     }
 })
+// ######## OWL CAROUSEL END #########
 
 // #########SMOOTH SCROLLING START##########
 // Select all links with hashes
@@ -62,9 +69,9 @@ $(window).scroll(function() {
     var scroll = $(window).scrollTop();
 
     if (scroll >= 900) {
-        $(".top-menu, .top-menu ul li a").addClass("menugrey");
+        $(".top-menu, .top-menu ul li a, .burger i").addClass("menugrey");
     } else {
-        $(".top-menu, .top-menu ul li a").removeClass("menugrey");
+        $(".top-menu, .top-menu ul li a, .burger i").removeClass("menugrey");
     }
 });
 // ########Change menu bar backgorund on scroll END############
@@ -94,6 +101,7 @@ $(window).on('scroll', function () {
 
 $('#clock').countdown('2019/09/07').on('update.countdown', function(event) {
   var $this = $(this).html(event.strftime(''
+    + '<h2>WE ARE GETTING HITCHED IN:</h2>'
     + '<span>%-w</span> week%!w '
     + '<span>%-d</span> day%!d '
     + '<span>%H</span> hr '));

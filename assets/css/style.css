@@ -216,7 +216,7 @@ body {
   height: 70px;
 }
 
-.top-menu ul {
+.nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -251,6 +251,44 @@ body {
 
 .menugrey li a:hover {
   color: #0d944f !important;
+}
+
+.burger {
+  display: none;
+}
+
+.burger i {
+  color: white;
+  font-size: 1.3rem;
+}
+
+@media all and (max-width: 600px) {
+  .top-menu {
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    height: auto;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    width: auto;
+    padding: 0;
+  }
+  .nav {
+    display: none;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+  .nav.show {
+    display: block;
+  }
+  .menu-item {
+    width: 100%;
+  }
+  .burger {
+    display: block;
+    padding: 15px 15px 15px 15px;
+  }
 }
 
 /*top menu end*/
@@ -514,6 +552,10 @@ body {
   font-size: 1.75rem;
   padding: 0 0 40px 0;
   font-weight: 700;
+}
+
+.timer-container span {
+  font-size: 2rem;
 }
 
 /*Timer section END */
