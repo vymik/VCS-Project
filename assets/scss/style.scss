@@ -351,7 +351,6 @@ body{
 
 /*Timer section START */
 .timer-container {
-	background-color: #edfcff;
 	padding: 120px 0;
 }
 .timer-container h2 {
@@ -514,6 +513,14 @@ body{
 	font-size: 2rem;
 }
 /* ##########Location section END */
+
+section:nth-child(odd){
+	background-color: #f6f6f4;
+}
+section:nth-child(even){
+	background-color: white;
+}
+
 
 /* ########## Responsive ######## */
 @media all and (max-width: 750px){

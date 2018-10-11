@@ -593,7 +593,6 @@ body {
 /* about us section END */
 /*Timer section START */
 .timer-container {
-  background-color: #edfcff;
   padding: 120px 0;
 }
 
@@ -775,6 +774,14 @@ body {
 }
 
 /* ##########Location section END */
+section:nth-child(odd) {
+  background-color: #f6f6f4;
+}
+
+section:nth-child(even) {
+  background-color: white;
+}
+
 /* ########## Responsive ######## */
 @media all and (max-width: 750px) {
   .top-menu {
