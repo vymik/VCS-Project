@@ -1,9 +1,14 @@
 $(document).ready(function(){
 	console.log("pavyko");
 // ######## BURGER MENU START ############
-$('#nav-icon3').click(function(){
+$('#nav-icon3, .menu-item a').click(function(){
   $('.nav').toggleClass('show');
 });
+ $('.menu-item a').click(function(){
+  $('#nav-icon3').toggleClass('open');
+});
+
+
 // ######## BURGER MENU END ############
 
 // ######## OWL CAROUSEL START #########
