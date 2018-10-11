@@ -262,7 +262,7 @@ body {
   font-size: 1.3rem;
 }
 
-@media all and (max-width: 600px) {
+@media all and (max-width: 750px) {
   .top-menu {
     -webkit-box-pack: start;
     -ms-flex-pack: start;
@@ -281,10 +281,10 @@ body {
   }
   .nav.show {
     display: block;
+    height: 100vh;
   }
   .menu-item {
     width: 100%;
-    border: 1px solid #373a38;
   }
   .burger {
     display: block;
@@ -424,12 +424,14 @@ body {
   font-weight: 900;
   color: #454545;
   margin: 0;
+  text-transform: uppercase;
 }
 
 .heading h2 span {
   font-family: 'Clicker Script', cursive;
   font-weight: 400;
   color: #0d9a50;
+  text-transform: lowercase;
 }
 
 .heading {
@@ -705,10 +707,20 @@ body {
 .map-column {
   width: 48%;
   text-transform: uppercase;
+  font-size: 1.25rem;
   color: #454545;
+  font-weight: 700;
 }
 
 .map {
   width: 100%;
   height: 300px;
+  -webkit-box-shadow: 10px 10px 28px -6px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 28px -6px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 28px -6px rgba(0, 0, 0, 0.75);
+}
+
+.location-icon i {
+  color: #0d9a50;
+  font-size: 2rem;
 }
