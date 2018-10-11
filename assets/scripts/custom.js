@@ -68,7 +68,7 @@ $('a[href*="#"]')
 $(window).scroll(function() {    
     var scroll = $(window).scrollTop();
 
-    if (scroll >= 900) {
+    if (scroll >= 850) {
         $(".top-menu, .top-menu ul li a, .burger i").addClass("menugrey");
     } else {
         $(".top-menu, .top-menu ul li a, .burger i").removeClass("menugrey");
@@ -106,7 +106,22 @@ $('#clock').countdown('2019/09/07').on('update.countdown', function(event) {
     + '<span>%-d</span> day%!d '
     + '<span>%H</span> hr '));
 });
+// ############# MAPS START ################
 
+
+// Initialize and add the map
+function initMap() {
+  // The location of Uluru
+  var uluru = {lat: -25.344, lng: 131.036};
+  // The map, centered at Uluru
+  var map = new google.maps.Map(
+      document.getElementById('map'), {zoom: 4, center: uluru});
+  // The marker, positioned at Uluru
+  var marker = new google.maps.Marker({position: uluru, map: map});
+}
+
+
+// ############# MAPS END ################
 
 
 });

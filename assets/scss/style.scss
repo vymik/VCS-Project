@@ -87,6 +87,7 @@ body{
 	}
 	.menu-item{
 		width: 100%;
+		border: 1px solid #373a38;
 	}
 	.burger{
 		display: block;
@@ -191,7 +192,8 @@ body{
 }
 .about-us-container{
 	width: 60%; 
-	margin: 0 auto; 
+	margin: 0 auto;
+	padding-bottom: 80px; 
 }
 .heading h2{
 	font-size: 2.5rem;
@@ -453,6 +455,7 @@ body{
 	width: 70%; 
 	margin: 0 auto; 
 	text-align: center;
+	padding-bottom: 100px;
 }
 .section-centered .heading p span{
 	background-color: #f6f6f4;
@@ -475,3 +478,19 @@ body{
     margin: 7px 0 13px 0;
 }
 /* ##########Carousel section END */
+/* ##########Location section END */
+.maps-container {
+	display: flex;
+	justify-content: space-between;
+}
+
+.map-column {
+	width: 48%;
+	text-transform: uppercase;
+	color: #454545;
+}
+.map {
+	width:100%;
+	height: 300px;
+	
+}
