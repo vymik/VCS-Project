@@ -68,43 +68,7 @@ body{
 	font-size: 1.3rem;
 }
 
-@media all and (max-width: 750px){
-	.top-menu{
-		background-color:#f8f8f8;
-		justify-content: flex-start;
-		height: auto;
-		align-items: flex-start;
-		width: auto;
-		padding: 0;
-	}
-	.top-menu li{
-		padding-top: 10px;
-	}
-	.top-menu li a{
-		padding: 10px 25px;
-		color: #7b7d7c;
-		font-size: 1.25rem;
-	}
 
-	.nav{
-		display: none;
-		flex-wrap: wrap;
-	}
-
-	.nav.show{
-		display: block;
-		height: 100vh;
-	}
-	.menu-item{
-		width: 100%;
-		
-	}
-	.burger{
-		display: block;
-		padding: 15px 15px 15px 15px;
-	}
-
-}
 
 /* ############### Burger animation START ################ */
 #nav-icon3 {
@@ -141,11 +105,6 @@ body{
   -o-transition: .25s ease-in-out;
   transition: .25s ease-in-out;
 }
-
-
-
-
-/* Icon 3 */
 
 #nav-icon3 span:nth-child(1) {
   top: 0px;
@@ -204,8 +163,6 @@ body{
 	background:linear-gradient(0deg,rgba(0,0,0,0.5),
 		rgba(0,0,0,0.5)),
 		url(../images/hero3.jpg);
-	// background: rgba(0, 0, 0, 0.5);
-	// background: url(../images/hero2.jpg) no-repeat center center;
 	background-size: cover;
 	background-position: center;
 	padding: 0;
@@ -214,11 +171,10 @@ body{
 }
 
 .hero-content {
-	width: 100%;
+	width: auto;
 	margin: 0 auto;
 	text-align: center;
 	border: 8px solid white;
-	// background-color: #cbdbbe;
 	padding: 20px 60px;
 }
 .hero-content h2 {
@@ -233,7 +189,7 @@ body{
 .hero-content h1 {
 	font-weight: 300;
     font-family: 'Dancing Script', cursive;
-    font-size: 6vw;
+    font-size: 4rem;
     margin: 0;
     color: white;  
 }
@@ -273,8 +229,6 @@ body{
 }
 /* HERO pabaiga */
 .about-us {
-	// min-height: 100vh;
-	// max-height: 100vh;
 	background: white;
 	background-size: cover;
 	background-position: center;
@@ -290,7 +244,6 @@ body{
 	font-size: 2.5rem;
 	letter-spacing: -1px;
 	font-weight: 900;
-	// line-height: 45px;
 	color: #454545;
 	margin:0;
 	text-transform: uppercase;
@@ -358,9 +311,7 @@ body{
 .inner-round-border img:hover{
 	transform: scale(1.2);
 }
-// .round-pic {
-// 	border-radius: 50%;
-// }
+
 .pic-frame {
 
 	position: absolute;
@@ -419,19 +370,21 @@ body{
 
 /*Info section START */
 .info-container {
-	max-width: 1200px; 
+	padding: 80px 0 0;
+	width: 75%; 
 	margin: 0 auto; 
 	display: flex;
+	flex-wrap: wrap;
 	text-align: center;
+	justify-content: space-between;
 }
 .info-column {
-	justify-content: space-between;
-	width: 30.66%;
-	margin:80px 4% 80px 0;
+	width: 28%;
+	margin:0;
 }
-.info-column:nth-child(3n) {
-	margin:80px 0 80px 0;
-}
+// .info-column:nth-child(3n) {
+// 	margin:80px 0 80px 0;
+// }
 .info-column h3 {
 	text-transform: uppercase;
 	font-size: 1.25rem;
@@ -455,42 +408,6 @@ body{
 	width: 100vw;
 	margin: 0 auto;
 }
-// .gallery-heading {
-// 	text-align: center;
-// 	padding: 60px;
-// }
-// .gallery-heading h2{
-// 	font-size: 2.5rem;
-// 	letter-spacing: -1px;
-// 	font-weight: 900;
-// 	line-height: 45px;
-// 	color: #454545;
-// 	padding-bottom: 10px;
-// 	margin: 0;
-// }
-
-// .gallery-heading h2 span {
-// 	font-family: 'Clicker Script', cursive;
-// 	font-weight: 400;
-// 	color: #0d9a50;
-// }
-
-// .gallery-heading p{
-// 	font-weight: 400;
-//     padding: 0 20px;
-//     margin: 0 auto;
-//     text-align: center;
-//     color: #646464;
-//     border-bottom: 1px solid #0d9a50;
-//     line-height: 0.1rem;
-//     display: inline-block;
-// }
-// .gallery-heading p span{
-// 	background-color: #fff;
-//     padding: 0 10px;
-// 	font-size: 0.875rem;
-// 	color: #65645f;
-// }
 
 .gallery-container {
 	width: 100%;
@@ -526,8 +443,7 @@ body{
     color: #fff;
     letter-spacing: -0.5px;
     text-transform: capitalize;
-    font-weight: 300;
-    
+    font-weight: 300;  
 }
 
 .gallery-pic-container h3 span {
@@ -571,15 +487,16 @@ body{
     margin: 7px 0 13px 0;
 }
 /* ##########Carousel section END */
-/* ##########Location section END */
+/* ##########Location section START */
 .maps-container {
 	display: flex;
 	justify-content: space-between;
+	flex-wrap: wrap;
 }
 
 .map-column {
 	width: 48%;
-	text-transform: uppercase;
+	text-transform: capitalize;
 	font-size: 1.25rem;
     color: #454545;
     font-weight: 700;
@@ -595,4 +512,111 @@ body{
 .location-icon i{
 	color: #0d9a50;
 	font-size: 2rem;
+}
+/* ##########Location section END */
+
+/* ########## Responsive ######## */
+@media all and (max-width: 750px){
+	//menu bar
+
+	.top-menu{
+		background-color:#f8f8f8;
+		justify-content: flex-start;
+		height: auto;
+		align-items: flex-start;
+		width: auto;
+		padding: 0;
+	}
+	.top-menu li{
+		padding-top: 10px;
+	}
+	.top-menu li a{
+		padding: 10px 25px;
+		color: #7b7d7c;
+		font-size: 1.25rem;
+	}
+
+	.nav{
+		display: none;
+		flex-wrap: wrap;
+	}
+
+	.nav.show{
+		display: block;
+		height: 100vh;
+	}
+	.menu-item{
+		width: 100%;
+		
+	}
+	.burger{
+		display: block;
+		padding: 15px 15px 15px 15px;
+	}
+	// Hero content
+	.hero-content{
+		width: auto;
+	}
+	.hero-content h1{
+		font-size: 3rem;
+	}
+	.hero-content h2 {
+		font-size: 1rem;
+	}
+	.hero-content p {
+		font-size: 1.2rem;
+	}
+	// ABOUT US section
+	.heading p {
+		font-size: 0.75rem;
+		border-bottom: none;
+		padding: 0;
+		line-height: normal;
+	}	
+	// INFO section
+	.info-column{
+		width: 100%;
+	}
+	// LOCATION section
+	#location .section-centered{
+		width: 85%
+	}
+	.map-column{
+		width: 100%;
+		height: auto;
+	}
+	
+
+}
+@media all and (max-width: 600px){
+	// hero content
+	.hero-content h1{
+		font-size: 2rem;
+	}
+
+	// about us section
+	.about-us-container{
+		width: 85%;
+	}
+	.heading {
+		padding: 70px 0 5% 0;
+	}
+	.heading h2{
+		font-size: 2rem;
+	}
+	.she-he .about-column {
+    	width: 100%;
+	}
+	.socials {
+		padding: 0 0 40px;
+	}
+	//info column
+	.info-column{
+		margin: 0;
+	}
+	// Gallery section
+	.gallery-pic-container{
+		width: 100%;
+	}
+
 }

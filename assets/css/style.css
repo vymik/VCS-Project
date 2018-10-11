@@ -3,7 +3,6 @@
 *::after {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  border: 1px solid red;
 }
 
 body {
@@ -262,45 +261,6 @@ body {
   font-size: 1.3rem;
 }
 
-@media all and (max-width: 750px) {
-  .top-menu {
-    background-color: #f8f8f8;
-    -webkit-box-pack: start;
-    -ms-flex-pack: start;
-    justify-content: flex-start;
-    height: auto;
-    -webkit-box-align: start;
-    -ms-flex-align: start;
-    align-items: flex-start;
-    width: auto;
-    padding: 0;
-  }
-  .top-menu li {
-    padding-top: 10px;
-  }
-  .top-menu li a {
-    padding: 10px 25px;
-    color: #7b7d7c;
-    font-size: 1.25rem;
-  }
-  .nav {
-    display: none;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-  }
-  .nav.show {
-    display: block;
-    height: 100vh;
-  }
-  .menu-item {
-    width: 100%;
-  }
-  .burger {
-    display: block;
-    padding: 15px 15px 15px 15px;
-  }
-}
-
 /* ############### Burger animation START ################ */
 #nav-icon3 {
   width: 40px;
@@ -339,7 +299,6 @@ body {
   transition: .25s ease-in-out;
 }
 
-/* Icon 3 */
 #nav-icon3 span:nth-child(1) {
   top: 0px;
 }
@@ -413,7 +372,7 @@ body {
 }
 
 .hero-content {
-  width: 100%;
+  width: auto;
   margin: 0 auto;
   text-align: center;
   border: 8px solid white;
@@ -433,7 +392,7 @@ body {
 .hero-content h1 {
   font-weight: 300;
   font-family: 'Dancing Script', cursive;
-  font-size: 6vw;
+  font-size: 4rem;
   margin: 0;
   color: white;
 }
@@ -654,24 +613,23 @@ body {
 /*Timer section END */
 /*Info section START */
 .info-container {
-  max-width: 1200px;
+  padding: 80px 0 0;
+  width: 75%;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
   text-align: center;
-}
-
-.info-column {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  width: 30.66%;
-  margin: 80px 4% 80px 0;
 }
 
-.info-column:nth-child(3n) {
-  margin: 80px 0 80px 0;
+.info-column {
+  width: 28%;
+  margin: 0;
 }
 
 .info-column h3 {
@@ -783,7 +741,7 @@ body {
 }
 
 /* ##########Carousel section END */
-/* ##########Location section END */
+/* ##########Location section START */
 .maps-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -791,11 +749,13 @@ body {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .map-column {
   width: 48%;
-  text-transform: uppercase;
+  text-transform: capitalize;
   font-size: 1.25rem;
   color: #454545;
   font-weight: 700;
@@ -812,4 +772,100 @@ body {
 .location-icon i {
   color: #0d9a50;
   font-size: 2rem;
+}
+
+/* ##########Location section END */
+/* ########## Responsive ######## */
+@media all and (max-width: 750px) {
+  .top-menu {
+    background-color: #f8f8f8;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    height: auto;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    width: auto;
+    padding: 0;
+  }
+  .top-menu li {
+    padding-top: 10px;
+  }
+  .top-menu li a {
+    padding: 10px 25px;
+    color: #7b7d7c;
+    font-size: 1.25rem;
+  }
+  .nav {
+    display: none;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+  .nav.show {
+    display: block;
+    height: 100vh;
+  }
+  .menu-item {
+    width: 100%;
+  }
+  .burger {
+    display: block;
+    padding: 15px 15px 15px 15px;
+  }
+  .hero-content {
+    width: auto;
+  }
+  .hero-content h1 {
+    font-size: 3rem;
+  }
+  .hero-content h2 {
+    font-size: 1rem;
+  }
+  .hero-content p {
+    font-size: 1.2rem;
+  }
+  .heading p {
+    font-size: 0.75rem;
+    border-bottom: none;
+    padding: 0;
+    line-height: normal;
+  }
+  .info-column {
+    width: 100%;
+  }
+  #location .section-centered {
+    width: 85%;
+  }
+  .map-column {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+  .about-us-container {
+    width: 85%;
+  }
+  .heading {
+    padding: 70px 0 5% 0;
+  }
+  .heading h2 {
+    font-size: 2rem;
+  }
+  .she-he .about-column {
+    width: 100%;
+  }
+  .socials {
+    padding: 0 0 40px;
+  }
+  .info-column {
+    margin: 0;
+  }
+  .gallery-pic-container {
+    width: 100%;
+  }
 }
