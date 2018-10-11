@@ -1,8 +1,8 @@
 $(document).ready(function(){
 	console.log("pavyko");
 // ######## BURGER MENU START ############
-$('.burger').click(function(){
-  $('.nav').animate(toggleClass('show'));
+$('#nav-icon3').click(function(){
+  $('.nav').toggleClass('show');
 });
 // ######## BURGER MENU END ############
 
@@ -68,7 +68,7 @@ $('a[href*="#"]')
 $(window).scroll(function() {    
     var scroll = $(window).scrollTop();
 
-    if (scroll >= 800) {
+    if (scroll >= 700) {
         $(".top-menu, .top-menu ul li a, .burger i").addClass("menugrey");
     } else {
         $(".top-menu, .top-menu ul li a, .burger i").removeClass("menugrey");
@@ -107,6 +107,10 @@ $('#clock').countdown('2019/09/07').on('update.countdown', function(event) {
     + '<span>%H</span> hr '));
 });
 
-
+//########### Burger animation ########## 
+$('#nav-icon3').click(function(){
+    $(this).toggleClass('open');
+  });
+// ########## Burger animation END########
 
 });
