@@ -80,7 +80,7 @@ $(window).scroll(function() {
     }
 });
 // ########Change menu bar backgorund on scroll END############
-
+// ########### Active link on menu START##########
 var sections = $('section')
   , nav = $('.top-menu')
   , nav_height = nav.outerHeight();
@@ -102,16 +102,17 @@ $(window).on('scroll', function () {
     }
   });
 });
-// ############################
+// ########### Active link on menu END ##########
+// ########### Countdown START ###########
 
 $('#clock').countdown('2019/09/07').on('update.countdown', function(event) {
   var $this = $(this).html(event.strftime(''
     + '<h2>WE ARE GETTING HITCHED IN:</h2>'
-    + '<span>%-w</span> week%!w '
-    + '<span>%-d</span> day%!d '
-    + '<span>%H</span> hr '));
+    + '<h3><span>%-w</span> week%!w </h3>'
+    + '<h3><span>%-d</span> day%!d </h3>'
+    + '<h3><span>%H</span> hr </h3>'));
 });
-
+// ########### Countdown END ###########
 //########### Burger animation ########## 
 $('#nav-icon3').click(function(){
     $(this).toggleClass('open');
