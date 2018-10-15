@@ -594,20 +594,30 @@ body {
 /* about us section END */
 /*Timer section START */
 .timer-container {
-  padding: 120px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
-.timer-container h2 {
+.countdown-heading h2 {
   text-transform: uppercase;
   text-align: center;
-  color: #92b476;
+  color: #454545;
   font-size: 1.75rem;
-  padding: 0 0 40px 0;
+  padding: 80px 0 40px 0;
   font-weight: 700;
 }
 
+.timer-container h3 {
+  padding: 0 15px;
+  color: #0d9a50;
+}
+
 .timer-container span {
-  font-size: 2rem;
+  font-size: 5rem;
 }
 
 /*Timer section END */
