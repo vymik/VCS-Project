@@ -46,7 +46,6 @@ body{
     padding: 0px 25px;
     margin: 20px 0px;   
 }
-.social-links ul li a:hover,
 .top-menu li a:hover {
 	color: #0d944f;
 }
@@ -352,30 +351,25 @@ body{
 
 /*Timer section START */
 .timer-container {
-	display: flex;
-	justify-content:center;
+	padding: 120px 0;
 }
-.countdown-heading h2 {
+.timer-container h2 {
 	text-transform: uppercase;
 	text-align: center;
-	color: #454545;
+	color: #92b476;
 	font-size: 1.75rem;
-	padding: 80px 0 40px 0;
+	padding: 0 0 40px 0;
 	font-weight: 700;
 }
-.timer-container h3 {
-	padding: 0 15px;
-	color: #0d9a50;
-}
 .timer-container span{
-	font-size: 5rem;
-	// color: #0d9a50;
+	font-size: 2rem;
+
 }
 /*Timer section END */
 
 /*Info section START */
 .info-container {
-	padding: 80px 0;
+	padding: 80px 0 0;
 	width: 75%; 
 	margin: 0 auto; 
 	display: flex;
@@ -387,6 +381,9 @@ body{
 	width: 28%;
 	margin:0;
 }
+// .info-column:nth-child(3n) {
+// 	margin:80px 0 80px 0;
+// }
 .info-column h3 {
 	text-transform: uppercase;
 	font-size: 1.25rem;
@@ -410,9 +407,6 @@ body{
 	width: 100vw;
 	margin: 0 auto;
 }
-.memories-container .heading p span{
-	background-color: #f6f6f4;
-}
 
 .gallery-container {
 	width: 100%;
@@ -434,9 +428,6 @@ body{
 	width: 100%;
 	display: block;
 	opacity: 0.5;
-}
-.img-opc{
-	opacity: 1 !important;
 }
 .gallery-pic-container img:hover{
 	opacity: 1;
@@ -465,6 +456,7 @@ body{
 .carousel-section {
 	width: 100vw;
 	background-color: #f6f6f4;
+	
 }
 
 .section-centered {
@@ -473,8 +465,8 @@ body{
 	text-align: center;
 	padding-bottom: 100px;
 }
-.carousel-section .section-centered .heading p span{
-	background-color: white;
+.section-centered .heading p span{
+	background-color: #f6f6f4;
 }
 
 .carousel-column h3{
@@ -495,9 +487,6 @@ body{
 }
 /* ##########Carousel section END */
 /* ##########Location section START */
-#location .section-centered .heading p span{
-	background-color: #f6f6f4;
-}
 .maps-container {
 	display: flex;
 	justify-content: space-between;
@@ -509,13 +498,8 @@ body{
 	text-transform: capitalize;
 	font-size: 1.25rem;
     color: #454545;
-    font-weight: 700;   
-}
-.map-column img{
-	width: 50px;
-    display: block;
-    margin: 0 auto;
-    padding: 0 0 20px;
+    font-weight: 700;
+    
 }
 .map {
 	width:100%;
@@ -528,79 +512,7 @@ body{
 	color: #0d9a50;
 	font-size: 2rem;
 }
-/* ########## Location section END */
-
-/* ########## RSVP section START */
-
-#rsvp .heading h2{
-	padding: 0 0 40px; 
-}
-
-#rsvp .section-centered div ul li{
-	list-style: none;
-}
-.rsvp-link a,
-#rsvp .section-centered div ul li a{
-	text-decoration: none;
-}
-.rsvp-link{
-	padding: 0 0 60px;
-	width: 100%;
-}
-.rsvp-link a{
-	padding: 15px 50px;
-	border: 2px #0d9a50 solid;
-	color: #0d9a50;
-	transition: 0.5s;
-	-webkit-transition: 0.5s;
-}
-.rsvp-link a:hover{
-	background-color:#0d9a50;
-	color: white; 
-}
-
-.social-links {
-	width: 100%;	 
-}
-.footer-links ul,
-.social-links ul {
-	display: flex;
-	// flex-wrap:wrap;
-	justify-content: center;
-} 
-.social-links ul li {
-	padding: 0 20px;
-	// width: 100%;
-}
-.social-links ul li a{
-	color: #565656;
-	font-size: 0.9375rem;
-	font-weight: 800;
-	text-transform: uppercase;
-}
-
-.footer-links{
-	padding: 40px 0 0;
-}
-.footer-links ul li {
-	padding: 0 10px;
-}
-.footer-links ul li a{
-	color: #0d9a50;
-	font-weight: 400;
-	font-size: 0.75rem;
-}
-.footer-links ul li a:hover{
-	color: #65645f;
-}
-
-/* ########## RSVP section END */
-
-
-
-
-
-/* ######## Backgroung color kas antrai sekcijai #####*/
+/* ##########Location section END */
 
 section:nth-child(odd){
 	background-color: #f6f6f4;
@@ -608,7 +520,6 @@ section:nth-child(odd){
 section:nth-child(even){
 	background-color: white;
 }
-
 
 
 /* ########## Responsive ######## */
@@ -620,12 +531,11 @@ section:nth-child(even){
 		justify-content: flex-start;
 		height: auto;
 		align-items: flex-start;
-		width: 100%;
+		width: auto;
 		padding: 0;
 	}
 	.top-menu li{
 		padding-top: 10px;
-		padding-bottom: 10px;
 	}
 	.top-menu li a{
 		padding: 10px 25px;
@@ -644,7 +554,6 @@ section:nth-child(even){
 	}
 	.menu-item{
 		width: 100%;
-		// border-bottom: 1px solid gray;
 		
 	}
 	.burger{
@@ -715,14 +624,6 @@ section:nth-child(even){
 	// Gallery section
 	.gallery-pic-container{
 		width: 100%;
-	}
-	// RSVP section
-	.social-links ul{
-		flex-wrap:wrap;
-	}
-	.social-links ul li{
-		width: 100%;
-		padding: 10px 0 0;
 	}
 
 }
