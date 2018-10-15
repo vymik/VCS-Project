@@ -620,11 +620,12 @@ section:nth-child(even){
 		justify-content: flex-start;
 		height: auto;
 		align-items: flex-start;
-		width: auto;
+		width: 100%;
 		padding: 0;
 	}
 	.top-menu li{
 		padding-top: 10px;
+		padding-bottom: 10px;
 	}
 	.top-menu li a{
 		padding: 10px 25px;
@@ -643,6 +644,7 @@ section:nth-child(even){
 	}
 	.menu-item{
 		width: 100%;
+		// border-bottom: 1px solid gray;
 		
 	}
 	.burger{
