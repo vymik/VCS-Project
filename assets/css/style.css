@@ -793,12 +793,11 @@ section:nth-child(even) {
     -webkit-box-align: start;
     -ms-flex-align: start;
     align-items: flex-start;
-    width: 100%;
+    width: auto;
     padding: 0;
   }
   .top-menu li {
     padding-top: 10px;
-    padding-bottom: 10px;
   }
   .top-menu li a {
     padding: 10px 25px;
