@@ -119,4 +119,12 @@ $('#nav-icon3').click(function(){
   });
 // ########## Burger animation END########
 
+// ########## change gallery pic opacity then mouse over pic heading START #######
+$('.gallery-pic-container h3').mouseover(function(){
+  $(this).parent().children('img').addClass('img-opc');
+});
+$('.gallery-pic-container').mouseleave(function(){
+  $('.gallery-pic-container img').removeClass('img-opc');
+});
+// ########## change gallery pic opacity then mouse over pic heading END #######
 });
