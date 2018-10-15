@@ -306,7 +306,62 @@
 					<h2>Monika <span>and</span> Vytautas</h2>
 				</div>
 				<div class="rsvp-link">
-					<a href="#">RSVP NOW</a>
+					<a href="rsvp.html">RSVP NOW</a>
+				</div>
+				<div class="rsvp-form">
+					<form method="POST">
+						<h3>SELECT THE EVENT(S) YOU WILL BE ATTENDING:</h3>
+						<div class="checkbox-container">
+							<div>
+								<input type="checkbox" id="c1" name="c1" value="Wedding Ceremony">
+								<label for="c1">Wedding Ceremony</label>
+							</div>
+							<div>
+								<input type="checkbox" id="c2" name="c2" value="Restaurant Party">
+								<label for="c2">Restaurant Party</label>
+							</div>
+							<div>
+								<input type="checkbox" id="c3" name="c3" value="After Party">
+								<label for="c3">After Party</label>
+							</div>
+						</div>
+						<h3 class="form_subtitle">PLEASE SELECT A MEAL CHOICE</h3>
+						<div>
+							<div>
+								<label>MAIN</label>
+								<div class="select-container">
+									<select class="form-select" name="mainmeal">
+										<option value="Chicken">Chicken</option>
+					                    <option value="Beef">Beef</option>
+					                    <option value="Fish">Fish</option>
+					                    <option value="Vegetarian">Vegetarian</option>
+									</select>
+								</div>
+							</div>
+							<div>
+								<label>Second</label>
+								<div class="select-container">
+									<select class="form-select" name="secondmeal">
+							            <option value="Chicken">Chicken</option>
+					                    <option value="Beef">Beef</option>
+					                    <option value="Fish">Fish</option>
+					                    <option value="Vegetarian">Vegetarian</option>
+									</select>
+								</div>
+							</div>
+							<div>
+								<label>DESERT</label>
+								<div class="select-container">
+									<select class="form-select" name="desertmeal">
+										<option value="Chocolate Cake">Chocolate Cake</option>
+					                    <option value="Cup Cookies">Cup Cookies</option>
+					                    <option value="Pumpkin Cheesecake">Pumpkin Cheesecake</option>
+					                    <option value="Raspberry Cheesecake">Raspberry Cheesecake</option>
+									</select>
+								</div>
+							</div>
+						</div>
+					</form>
 				</div>
 				<div class="social-links">
 					<ul>
@@ -328,6 +383,7 @@
 			</div>		
 		</section>
 		<!-- RSVP section END -->
+
 		<script src="assets/scripts/jquery.js"></script>
 		<script src="assets/scripts/owl.carousel.min.js"></script>
 		<script src="assets/scripts/jquery.countdown.js"></script>

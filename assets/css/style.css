@@ -3,7 +3,6 @@
 *::after {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  border: 1px solid red;
 }
 
 body {
@@ -618,7 +617,7 @@ body {
 }
 
 .timer-container span {
-  font-size: 2rem;
+  font-size: 5rem;
 }
 
 /*Timer section END */
@@ -881,6 +880,10 @@ body {
 
 .footer-links ul li a:hover {
   color: #65645f;
+}
+
+.rsvp-form {
+  display: none;
 }
 
 /* ########## RSVP section END */
