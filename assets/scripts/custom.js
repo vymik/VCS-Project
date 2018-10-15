@@ -102,29 +102,28 @@ $(window).on('scroll', function () {
     }
   });
 });
+// ########### Active link on menu END ##########
+// ########### Countdown START ###########
 // ############################
 
 $('#clock').countdown('2019/09/07').on('update.countdown', function(event) {
   var $this = $(this).html(event.strftime(''
-    + '<h2>WE ARE GETTING HITCHED IN:</h2>'
-<<<<<<< HEAD
-<<<<<<< HEAD
-    + '<span>%-w</span> week%!w '
-    + '<span>%-d</span> day%!d '
-    + '<span>%H</span> hr '));
-=======
-=======
->>>>>>> parent of 00d7d6c... countdown fixed
-    + '<h3><span>%-w</span> week%!w </h3>'
+    + '<h3><span>%-m</span> month%!m </h3>'
     + '<h3><span>%-d</span> day%!d </h3>'
     + '<h3><span>%H</span> hr </h3>'));
->>>>>>> parent of 00d7d6c... countdown fixed
 });
-
+-// ########### Countdown END ###########
 //########### Burger animation ########## 
 $('#nav-icon3').click(function(){
     $(this).toggleClass('open');
   });
 // ########## Burger animation END########
-
+// ########## change gallery pic opacity then mouse over pic heading START #######
+$('.gallery-pic-container h3').mouseover(function(){
+  $(this).parent().children('img').addClass('img-opc');
+});
+$('.gallery-pic-container').mouseleave(function(){
+  $('.gallery-pic-container img').removeClass('img-opc');
+});
+// ########## change gallery pic opacity then mouse over pic heading END #######
 });

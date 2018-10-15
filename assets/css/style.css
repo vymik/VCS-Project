@@ -3,6 +3,7 @@
 *::after {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  border: 1px solid red;
 }
 
 body {
@@ -593,7 +594,13 @@ body {
 /* about us section END */
 /*Timer section START */
 .timer-container {
-  padding: 120px 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .timer-container h2 {
@@ -605,6 +612,11 @@ body {
   font-weight: 700;
 }
 
+.timer-container h3 {
+  padding: 0 15px;
+  color: #0d9a50;
+}
+
 .timer-container span {
   font-size: 2rem;
 }
@@ -612,7 +624,7 @@ body {
 /*Timer section END */
 /*Info section START */
 .info-container {
-  padding: 80px 0 0;
+  padding: 80px 0;
   width: 75%;
   margin: 0 auto;
   display: -webkit-box;
@@ -652,8 +664,11 @@ body {
 /* #########Info section END */
 /* ##########Galerijos section START */
 .memories-container {
-  width: 100vw;
   margin: 0 auto;
+}
+
+.memories-container .heading p span {
+  background-color: #f6f6f4;
 }
 
 .gallery-container {
@@ -682,6 +697,10 @@ body {
   opacity: 0.5;
 }
 
+.img-opc {
+  opacity: 1 !important;
+}
+
 .gallery-pic-container img:hover {
   opacity: 1;
 }
@@ -708,8 +727,11 @@ body {
 /* ##########Galerijos section END */
 /* ##########Carousel section START */
 .carousel-section {
-  width: 100vw;
   background-color: #f6f6f4;
+}
+
+.carousel-section .section-centered .heading p span {
+  background-color: white;
 }
 
 .section-centered {
@@ -741,6 +763,10 @@ body {
 
 /* ##########Carousel section END */
 /* ##########Location section START */
+#location .section-centered .heading p span {
+  background-color: #f6f6f4;
+}
+
 .maps-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -760,6 +786,13 @@ body {
   font-weight: 700;
 }
 
+.map-column img {
+  width: 50px;
+  display: block;
+  margin: 0 auto;
+  padding: 0 0 20px;
+}
+
 .map {
   width: 100%;
   height: 300px;
@@ -774,6 +807,83 @@ body {
 }
 
 /* ##########Location section END */
+/* ########## RSVP section START */
+#rsvp .heading h2 {
+  padding: 0 0 40px;
+}
+
+#rsvp .section-centered div ul li {
+  list-style: none;
+}
+
+.rsvp-link a,
+#rsvp .section-centered div ul li a {
+  text-decoration: none;
+}
+
+.rsvp-link {
+  padding: 0 0 60px;
+  width: 100%;
+}
+
+.rsvp-link a {
+  padding: 15px 50px;
+  border: 2px #0d9a50 solid;
+  color: #0d9a50;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+}
+
+.rsvp-link a:hover {
+  background-color: #0d9a50;
+  color: white;
+}
+
+.social-links {
+  width: 100%;
+}
+
+.footer-links ul,
+.social-links ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.social-links ul li {
+  padding: 0 20px;
+}
+
+.social-links ul li a {
+  color: #565656;
+  font-size: 0.9375rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.footer-links {
+  padding: 40px 0 0;
+}
+
+.footer-links ul li {
+  padding: 0 10px;
+}
+
+.footer-links ul li a {
+  color: #0d9a50;
+  font-weight: 400;
+  font-size: 0.75rem;
+}
+
+.footer-links ul li a:hover {
+  color: #65645f;
+}
+
+/* ########## RSVP section END */
 section:nth-child(odd) {
   background-color: #f6f6f4;
 }
@@ -847,6 +957,14 @@ section:nth-child(even) {
   .map-column {
     width: 100%;
     height: auto;
+  }
+  .social-links ul {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+  .social-links ul li {
+    width: 100%;
+    padding: 10px 0 0;
   }
 }
 
