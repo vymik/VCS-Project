@@ -107,9 +107,15 @@ $(window).on('scroll', function () {
 $('#clock').countdown('2019/09/07').on('update.countdown', function(event) {
   var $this = $(this).html(event.strftime(''
     + '<h2>WE ARE GETTING HITCHED IN:</h2>'
+<<<<<<< HEAD
     + '<span>%-w</span> week%!w '
     + '<span>%-d</span> day%!d '
     + '<span>%H</span> hr '));
+=======
+    + '<h3><span>%-w</span> week%!w </h3>'
+    + '<h3><span>%-d</span> day%!d </h3>'
+    + '<h3><span>%H</span> hr </h3>'));
+>>>>>>> parent of 00d7d6c... countdown fixed
 });
 
 //########### Burger animation ########## 
