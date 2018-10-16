@@ -126,4 +126,10 @@ $('.gallery-pic-container').mouseleave(function(){
   $('.gallery-pic-container img').removeClass('img-opc');
 });
 // ########## change gallery pic opacity then mouse over pic heading END #######
+// ########## RSVP Apear on button click ########
+$('.rsvp-link a').click(function(){
+  $('.rsvp-form').toggleClass('rsvp-form-show');
+
+});
+
 });

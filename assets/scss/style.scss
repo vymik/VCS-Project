@@ -599,7 +599,13 @@ body{
 }
 .rsvp-form {
 	display: none;
+	// transition: 0.5s;
 }
+.rsvp-form-show {
+	display: block;	
+}
+
+
 
 /* ########## RSVP section END */
 section:nth-child(odd){
