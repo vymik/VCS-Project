@@ -230,6 +230,7 @@ body {
   font-weight: 700;
   line-height: 30px;
   height: 30px;
+  padding: 15px 30px;
   margin: 30px 0px;
 }
 
@@ -936,6 +937,10 @@ form h3:after {
   color: #0d9a50;
 }
 
+.checkbox-column {
+  width: 28%;
+}
+
 .select-form-container {
   padding: 0 0 20px;
 }
@@ -1008,16 +1013,15 @@ section:nth-child(even) {
   .top-menu li {
     background-color: white;
     border-bottom: 1px #f6f6f6 solid;
-    padding: 0;
-    width: 100%;
+    padding: 15px;
   }
   .top-menu li a {
+    padding: 10px 25px;
     color: #454545;
     font-size: 1rem;
     background-color: white;
     font-weight: 700;
     letter-spacing: 0.4px;
-    width: 100%;
   }
   .nav {
     display: none;
@@ -1069,6 +1073,9 @@ section:nth-child(even) {
   .social-links ul li {
     width: 100%;
     padding: 10px 0 0;
+  }
+  .checkbox-column {
+    width: 90%;
   }
 }
 
