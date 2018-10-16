@@ -22,13 +22,12 @@ body{
 	justify-content: center;
 	align-items: center;
 	margin: 0;
-	padding-bottom: 10px;
+	// padding-bottom: 10px;
 	position: fixed;
 	top:0px;
 	width: 100vw;
 	z-index: 9999;
 	height: 70px;
-
 }
 .nav {
 	display: flex;
@@ -43,8 +42,8 @@ body{
     font-weight: 700;
     line-height: 30px;
     height: 30px;
-    padding: 0px 25px;
-    margin: 20px 0px;   
+    // padding: 15px 50px;
+    margin: 30px 0px;   
 }
 .top-menu li a:hover {
 	color: #0d944f;
@@ -551,16 +550,18 @@ body{
 	padding: 0 0 60px;
 	width: 100%;
 }
-.rsvp-link a{
+.rsvp-link button{
+	background: none;
 	padding: 15px 50px;
 	border: 2px #0d9a50 solid;
 	color: #0d9a50;
 	transition: 0.5s;
 	-webkit-transition: 0.5s;
 }
-.rsvp-link a:hover{
+.rsvp-link button:hover{
 	background-color:#0d9a50;
 	color: white; 
+	cursor: pointer;
 }
 
 .social-links {
@@ -599,9 +600,14 @@ body{
 }
 .rsvp-form {
 	display: none;
+	border: 5px solid #f6f6f4;
 	// background-color: #f6f6f4;
-	// transition: 0.5s;
-	padding:0 0 40px; 
+	-webkit-transition: display 1s linear;
+    -moz-transition: display 1s linear;
+    -o-transition: display 1s linear;
+    transition: display 1s linear;
+	padding: 30px;
+    margin: 0 0 30px; 
 }
 .rsvp-form-show {
 	display: block;	
@@ -610,6 +616,17 @@ form h3{
 	font-weight: 800;
     font-size: 1.25rem;
     color: #0d9a50;
+    position: relative;
+    padding-bottom: 40px;
+}
+form h3:after{
+	content: ' ';
+	background: #000;
+    position: absolute;
+    display: block;
+    width: 5%;
+    margin: 10px 47.5%;
+    border: 1px solid #000;
 }
 .select-form-container,
 .checkbox-container{
@@ -617,6 +634,10 @@ form h3{
 	flex-wrap:wrap;
 	justify-content: space-between;
 }
+
+// .checkbox-container{
+// 	position: relative;
+// }
 .checkbox-column label{
 	color:#65645f;
 	font-size: 0.875rem;
@@ -624,6 +645,59 @@ form h3{
 .checkbox-column label span{
 	color: #0d9a50;
 }
+// /* checkbox styling start */
+// .checkbox-column input { /* Hide the browser's default checkbox */
+//     position: absolute;
+//     opacity: 0;
+//     cursor: pointer;
+//     height: 0;
+//     width: 0;
+// }
+
+// .checkmark { /* Create a custom checkbox */
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     height: 25px;
+//     width: 25px;
+//     background-color: #eee;
+// }
+// /* On mouse-over, add a grey background color */
+// .checkbox-column:hover input ~ .checkmark {
+//     background-color: #ccc;
+// }
+
+// /* When the checkbox is checked, add a blue background */
+// .checkbox-column input:checked ~ .checkmark {
+//     background-color: #2196F3;
+// }
+
+// /* Create the checkmark/indicator (hidden when not checked) */
+// .checkmark:after {
+//     content: "";
+//     position: absolute;
+//     display: none;
+// }
+
+// /* Show the checkmark when checked */
+// .checkbox-column input:checked ~ .checkmark:after {
+//     display: block;
+// }
+
+// /* Style the checkmark/indicator */
+// .checkbox-column .checkmark:after {
+//     left: 9px;
+//     top: 5px;
+//     width: 5px;
+//     height: 10px;
+//     border: solid white;
+//     border-width: 0 3px 3px 0;
+//     -webkit-transform: rotate(45deg);
+//     -ms-transform: rotate(45deg);
+//     transform: rotate(45deg);
+// }
+// /* checkbox styling END */
+
 
 .select-form-container{
 	padding: 0 0 20px;
@@ -650,17 +724,12 @@ form h3{
 	// padding: 15px 0;
 }
 input.form_submit_contact{
-    border: 1px #e7e6e6 solid;
-    background-color: #fff;
-    cursor: pointer;
-    margin: 5px 0 0 0;
-    padding: 15px 75px;
-    font-size: 1rem;
-    font-weight: 700;
-    -webkit-transition: all .2s ease-out;
-    -moz-transition: all .2s ease-out;
-    -o-transition: all .2s ease-out;
-    transition: all .2s ease-out;
+	background: none;
+	padding: 15px 50px;
+	border: 2px #0d9a50 solid;
+	color: #0d9a50;
+	transition: 0.5s;
+	-webkit-transition: 0.5s;
 }
 input.form_submit_contact:hover{
 	background-color: #0d9a50;
@@ -686,14 +755,27 @@ section:nth-child(even){
 		align-items: flex-start;
 		width: auto;
 		padding: 0;
+		width: 100%;
+	}
+	.top-menu ul{
+		width: 100%;
 	}
 	.top-menu li{
-		padding-top: 10px;
+		background-color: white;
+		border-bottom: 1px #f6f6f6 solid;
+		padding: 0;
+		width: 100%;
+
 	}
 	.top-menu li a{
-		padding: 10px 25px;
-		color: #7b7d7c;
-		font-size: 1.25rem;
+		// padding: 10px 25px;
+		color: #454545;
+		font-size: 1rem;
+		background-color: white;
+		font-weight: 700;
+		letter-spacing: 0.4px;
+		width: 100%;
+
 	}
 
 	.nav{
@@ -703,7 +785,7 @@ section:nth-child(even){
 
 	.nav.show{
 		display: block;
-		height: 100vh;
+		// height: 100vh;
 	}
 	.menu-item{
 		width: 100%;
@@ -785,5 +867,14 @@ section:nth-child(even){
 	.gallery-pic-container{
 		width: 100%;
 	}
+	// RSVP
+	.select-column{
+		width: 90%;
+		padding: 0 0 30px;
+	}
+	input.form_submit_contact{
+		padding: 10px 40px;
+	}
+
 
 }

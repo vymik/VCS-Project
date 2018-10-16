@@ -207,7 +207,6 @@ body {
   -ms-flex-align: center;
   align-items: center;
   margin: 0;
-  padding-bottom: 10px;
   position: fixed;
   top: 0px;
   width: 100vw;
@@ -231,8 +230,7 @@ body {
   font-weight: 700;
   line-height: 30px;
   height: 30px;
-  padding: 0px 25px;
-  margin: 20px 0px;
+  margin: 30px 0px;
 }
 
 .top-menu li a:hover {
@@ -825,7 +823,8 @@ body {
   width: 100%;
 }
 
-.rsvp-link a {
+.rsvp-link button {
+  background: none;
   padding: 15px 50px;
   border: 2px #0d9a50 solid;
   color: #0d9a50;
@@ -834,9 +833,10 @@ body {
   -webkit-transition: 0.5s;
 }
 
-.rsvp-link a:hover {
+.rsvp-link button:hover {
   background-color: #0d9a50;
   color: white;
+  cursor: pointer;
 }
 
 .social-links {
@@ -884,7 +884,13 @@ body {
 
 .rsvp-form {
   display: none;
-  padding: 0 0 40px;
+  border: 5px solid #f6f6f4;
+  -webkit-transition: display 1s linear;
+  -moz-transition: display 1s linear;
+  -o-transition: display 1s linear;
+  transition: display 1s linear;
+  padding: 30px;
+  margin: 0 0 30px;
 }
 
 .rsvp-form-show {
@@ -895,6 +901,18 @@ form h3 {
   font-weight: 800;
   font-size: 1.25rem;
   color: #0d9a50;
+  position: relative;
+  padding-bottom: 40px;
+}
+
+form h3:after {
+  content: ' ';
+  background: #000;
+  position: absolute;
+  display: block;
+  width: 5%;
+  margin: 10px 47.5%;
+  border: 1px solid #000;
 }
 
 .select-form-container,
@@ -946,17 +964,13 @@ form h3 {
 }
 
 input.form_submit_contact {
-  border: 1px #e7e6e6 solid;
-  background-color: #fff;
-  cursor: pointer;
-  margin: 5px 0 0 0;
-  padding: 15px 75px;
-  font-size: 1rem;
-  font-weight: 700;
-  -webkit-transition: all .2s ease-out;
-  -moz-transition: all .2s ease-out;
-  -o-transition: all .2s ease-out;
-  transition: all .2s ease-out;
+  background: none;
+  padding: 15px 50px;
+  border: 2px #0d9a50 solid;
+  color: #0d9a50;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
 }
 
 input.form_submit_contact:hover {
@@ -986,14 +1000,24 @@ section:nth-child(even) {
     align-items: flex-start;
     width: auto;
     padding: 0;
+    width: 100%;
+  }
+  .top-menu ul {
+    width: 100%;
   }
   .top-menu li {
-    padding-top: 10px;
+    background-color: white;
+    border-bottom: 1px #f6f6f6 solid;
+    padding: 0;
+    width: 100%;
   }
   .top-menu li a {
-    padding: 10px 25px;
-    color: #7b7d7c;
-    font-size: 1.25rem;
+    color: #454545;
+    font-size: 1rem;
+    background-color: white;
+    font-weight: 700;
+    letter-spacing: 0.4px;
+    width: 100%;
   }
   .nav {
     display: none;
@@ -1002,7 +1026,6 @@ section:nth-child(even) {
   }
   .nav.show {
     display: block;
-    height: 100vh;
   }
   .menu-item {
     width: 100%;
@@ -1073,5 +1096,12 @@ section:nth-child(even) {
   }
   .gallery-pic-container {
     width: 100%;
+  }
+  .select-column {
+    width: 90%;
+    padding: 0 0 30px;
+  }
+  input.form_submit_contact {
+    padding: 10px 40px;
   }
 }

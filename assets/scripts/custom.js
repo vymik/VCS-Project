@@ -108,7 +108,7 @@ $(window).on('scroll', function () {
 
 $('#clock').countdown('2019/09/07').on('update.countdown', function(event) {
   var $this = $(this).html(event.strftime(''
-    + '<h3><span>%-m</span> month%!m </h3>'
+    + '<h3><span>%-w</span> week%!w </h3>'
     + '<h3><span>%-d</span> day%!d </h3>'
     + '<h3><span>%H</span> hr </h3>'));
 });
@@ -127,7 +127,7 @@ $('.gallery-pic-container').mouseleave(function(){
 });
 // ########## change gallery pic opacity then mouse over pic heading END #######
 // ########## RSVP Apear on button click ########
-$('.rsvp-link a').click(function(){
+$('.rsvp-link button').click(function(){
   $('.rsvp-form').toggleClass('rsvp-form-show');
 
 });
