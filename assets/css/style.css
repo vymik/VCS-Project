@@ -884,10 +884,84 @@ body {
 
 .rsvp-form {
   display: none;
+  padding: 0 0 40px;
 }
 
 .rsvp-form-show {
   display: block;
+}
+
+form h3 {
+  font-weight: 800;
+  font-size: 1.25rem;
+  color: #0d9a50;
+}
+
+.select-form-container,
+.checkbox-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.checkbox-column label {
+  color: #65645f;
+  font-size: 0.875rem;
+}
+
+.checkbox-column label span {
+  color: #0d9a50;
+}
+
+.select-form-container {
+  padding: 0 0 20px;
+}
+
+.select-column {
+  width: 28%;
+  text-align: left;
+}
+
+.select-column label {
+  color: #65645f;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+
+.select-container {
+  padding: 10px 0 0;
+}
+
+.form-select {
+  width: 100%;
+  border: none;
+  height: 30px;
+  border-bottom: 1px #e7e6e6 solid;
+}
+
+input.form_submit_contact {
+  border: 1px #e7e6e6 solid;
+  background-color: #fff;
+  cursor: pointer;
+  margin: 5px 0 0 0;
+  padding: 15px 75px;
+  font-size: 1rem;
+  font-weight: 700;
+  -webkit-transition: all .2s ease-out;
+  -moz-transition: all .2s ease-out;
+  -o-transition: all .2s ease-out;
+  transition: all .2s ease-out;
+}
+
+input.form_submit_contact:hover {
+  background-color: #0d9a50;
+  color: white;
 }
 
 /* ########## RSVP section END */
