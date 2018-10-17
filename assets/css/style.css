@@ -599,10 +599,14 @@ body {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
+  text-transform: uppercase;
+}
+
+.timer-column {
+  width: 28%;
 }
 
 .timer-container h2 {
-  text-transform: uppercase;
   text-align: center;
   color: #92b476;
   font-size: 1.75rem;
@@ -611,12 +615,18 @@ body {
 }
 
 .timer-container h3 {
-  padding: 0 15px;
+  color: #0d9a50;
+  font-size: 5rem;
+  font-weight: 300;
+  margin: 20px 0 0;
+}
+
+.timer-container p {
   color: #0d9a50;
 }
 
-.timer-container span {
-  font-size: 5rem;
+.timer-container img {
+  width: 100%;
 }
 
 /*Timer section END */
@@ -939,6 +949,7 @@ form h3:after {
 
 .checkbox-column {
   width: 28%;
+  padding-bottom: 15px;
 }
 
 .select-form-container {
@@ -984,12 +995,18 @@ input.form_submit_contact:hover {
 }
 
 /* ########## RSVP section END */
-section:nth-child(odd) {
+/* skirtinga backgorund spalva kas antrai sekcijai*/
+section:nth-child(even) {
   background-color: #f6f6f4;
 }
 
-section:nth-child(even) {
+section:nth-child(odd) {
   background-color: white;
+}
+
+/* ########## Apear on scroll ######## */
+.hideme {
+  opacity: 0;
 }
 
 /* ########## Responsive ######## */
@@ -1056,6 +1073,9 @@ section:nth-child(even) {
     padding: 0;
     line-height: normal;
   }
+  .timer-container h3 {
+    font-size: 4rem;
+  }
   .info-column {
     width: 100%;
   }
@@ -1097,6 +1117,12 @@ section:nth-child(even) {
   }
   .socials {
     padding: 0 0 40px;
+  }
+  .timer-container p {
+    font-size: 0.875rem;
+  }
+  .timer-container h3 {
+    font-size: 2.5rem;
   }
   .info-column {
     margin: 0;

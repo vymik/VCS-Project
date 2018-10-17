@@ -1,3 +1,6 @@
+
+
+
 $(document).ready(function(){
 	console.log("pavyko");
 // ######## BURGER MENU START ############
@@ -108,9 +111,9 @@ $(window).on('scroll', function () {
 
 $('#clock').countdown('2019/09/07').on('update.countdown', function(event) {
   var $this = $(this).html(event.strftime(''
-    + '<h3><span>%-w</span> week%!w </h3>'
-    + '<h3><span>%-d</span> day%!d </h3>'
-    + '<h3><span>%H</span> hr </h3>'));
+    + '<div class="timer-column"><h3>%-w</h3><p>week%!w</p><img src="assets/images/about_pic_frame.png" alt="carousel_pic_frame"></div>'
+    + '<div class="timer-column"><h3>%-d</h3><p>day%!d</p><img src="assets/images/about_pic_frame.png" alt="carousel_pic_frame"></div>'
+    + '<div class="timer-column"><h3>%H</h3><p>hours<p><img src="assets/images/about_pic_frame.png" alt="carousel_pic_frame"></div>'));
 });
 -// ########### Countdown END ###########
 //########### Burger animation ########## 
@@ -131,5 +134,25 @@ $('.rsvp-link button').click(function(){
   $('.rsvp-form').toggleClass('rsvp-form-show');
 
 });
+// ####### apear on scroll ###########
+/* Every time the window is scrolled ... */
+$(window).scroll( function(){
 
+    /* Check the location of each desired element */
+    $('.hideme').each( function(i){
+        
+        var bottom_of_object = $(this).position().top + $(this).outerHeight();
+        var bottom_of_window = $(window).scrollTop() + $(window).height();
+        
+        /* If the object is completely visible in the window, fade it it */
+        if( bottom_of_window > bottom_of_object ){
+            
+            $(this).animate({'opacity':'1'},1500);
+                
+        }
+        
+    }); 
+
+});
+// ####### apear on scroll ###########
 });

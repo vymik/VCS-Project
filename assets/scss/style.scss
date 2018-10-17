@@ -353,9 +353,13 @@ body{
 	padding: 0;
 	display: flex;
 	justify-content:center;
+	text-transform: uppercase;
+}
+.timer-column{
+	width: 28%;
+	// padding: 0;
 }
 .timer-container h2 {
-	text-transform: uppercase;
 	text-align: center;
 	color: #92b476;
 	font-size: 1.75rem;
@@ -363,12 +367,21 @@ body{
 	font-weight: 700;
 }
 .timer-container h3 {
-	padding: 0 15px;
+	
+	color: #0d9a50;
+	font-size: 5rem;
+	font-weight: 300;
+	margin: 20px 0 0;
+}
+.timer-container p{
 	color: #0d9a50;
 }
-.timer-container span{
-	font-size: 5rem;
+.timer-container img{
+	width: 100%;
+
 }
+
+
 /*Timer section END */
 
 /*Info section START */
@@ -647,60 +660,8 @@ form h3:after{
 }
 .checkbox-column{
 	width: 28%;
+	padding-bottom: 15px;
 }
-// /* checkbox styling start */
-// .checkbox-column input { /* Hide the browser's default checkbox */
-//     position: absolute;
-//     opacity: 0;
-//     cursor: pointer;
-//     height: 0;
-//     width: 0;
-// }
-
-// .checkmark { /* Create a custom checkbox */
-//     position: absolute;
-//     top: 0;
-//     left: 0;
-//     height: 25px;
-//     width: 25px;
-//     background-color: #eee;
-// }
-// /* On mouse-over, add a grey background color */
-// .checkbox-column:hover input ~ .checkmark {
-//     background-color: #ccc;
-// }
-
-// /* When the checkbox is checked, add a blue background */
-// .checkbox-column input:checked ~ .checkmark {
-//     background-color: #2196F3;
-// }
-
-// /* Create the checkmark/indicator (hidden when not checked) */
-// .checkmark:after {
-//     content: "";
-//     position: absolute;
-//     display: none;
-// }
-
-// /* Show the checkmark when checked */
-// .checkbox-column input:checked ~ .checkmark:after {
-//     display: block;
-// }
-
-// /* Style the checkmark/indicator */
-// .checkbox-column .checkmark:after {
-//     left: 9px;
-//     top: 5px;
-//     width: 5px;
-//     height: 10px;
-//     border: solid white;
-//     border-width: 0 3px 3px 0;
-//     -webkit-transform: rotate(45deg);
-//     -ms-transform: rotate(45deg);
-//     transform: rotate(45deg);
-// }
-// /* checkbox styling END */
-
 
 .select-form-container{
 	padding: 0 0 20px;
@@ -739,13 +700,19 @@ input.form_submit_contact:hover{
 	color: white;
 }
 /* ########## RSVP section END */
-section:nth-child(odd){
+
+/* skirtinga backgorund spalva kas antrai sekcijai*/
+section:nth-child(even){
 	background-color: #f6f6f4;
 }
-section:nth-child(even){
+section:nth-child(odd){
 	background-color: white;
 }
 
+/* ########## Apear on scroll ######## */
+.hideme{
+    opacity:0;
+}
 
 /* ########## Responsive ######## */
 @media all and (max-width: 750px){
@@ -816,6 +783,10 @@ section:nth-child(even){
 		padding: 0;
 		line-height: normal;
 	}	
+	// Timer section
+	.timer-container h3 {	
+	font-size: 4rem;
+	}
 	// INFO section
 	.info-column{
 		width: 100%;
@@ -863,6 +834,13 @@ section:nth-child(even){
 	}
 	.socials {
 		padding: 0 0 40px;
+	}
+	// Timer section
+	.timer-container p{
+		font-size: 0.875rem;
+	}
+	.timer-container h3 {	
+	font-size: 2.5rem;
 	}
 	//info column
 	.info-column{

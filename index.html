@@ -14,57 +14,59 @@
 	</head>
 
 	<body>
-		<!-- Hero start -->
+		<!-- top navigation start -->
+		<header class="top-menu">
+			<div class="burger">
+				<div id="nav-icon3">
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+			</div>
+			<ul class="nav">
+				<li class="menu-item">
+					<a href="#home">
+						Home
+					</a>
+				</li>
+				<li class="menu-item">
+					<a href="#about-us">
+						About Us
+					</a>
+				</li>						
+				<li class="menu-item">
+					<a href="#info">
+						Info
+					</a>
+				</li>
+				<li class="menu-item">
+					<a href="#memories">
+						Gallery
+					</a>
+				</li>
+				<li class="menu-item">
+					<a href="#carousel">
+						B&G
+					</a>
+				</li>
+				<li class="menu-item">
+					<a href="#location">
+						Location
+					</a>
+				</li>
+				<li class="menu-item">
+					<a href="#rsvp">
+						Rsvp
+					</a>
+				</li>
+			</ul>
+		</header>
+		<!-- top navigation end -->
+		<!-- Hero section start -->
 		<section id="home" class="hero">
-				<header class="top-menu">
-					<div class="burger">
-						<div id="nav-icon3">
-							<span></span>
-							<span></span>
-							<span></span>
-							<span></span>
-						</div>
-					</div>
-					<ul class="nav">
-						<li class="menu-item">
-							<a href="#home">
-								Home
-							</a>
-						</li>
-						<li class="menu-item">
-							<a href="#about-us">
-								About Us
-							</a>
-						</li>						
-						<li class="menu-item">
-							<a href="#info">
-								Info
-							</a>
-						</li>
-						<li class="menu-item">
-							<a href="#memories">
-								Gallery
-							</a>
-						</li>
-						<li class="menu-item">
-							<a href="#carousel">
-								B&G
-							</a>
-						</li>
-						<li class="menu-item">
-							<a href="#location">
-								Location
-							</a>
-						</li>
-						<li class="menu-item">
-							<a href="#rsvp">
-								Rsvp
-							</a>
-						</li>
-					</ul>
-				</header><div class="container">
-				
-				<!-- centrinis kvadratas -->
+			<div class="container">		
+				<!-- centrinis kvadratas pradzia-->
 				<div class="hero-content">
 					<h2>Save the date</h2>
 					<div>
@@ -74,7 +76,7 @@
 					<p>2019.09.07</p>
 				</div>
 				<!-- centrinis kvadratas pabaiga -->
-				<a href="#about-us"><i class="fas fa-angle-down bounce"></i></a>
+				<a href="#about-us"><i class="fas fa-angle-down bounce"></i></a> 
 			</div>	
 		</section>
 		<!-- Hero end -->
@@ -146,18 +148,18 @@
 		<!-- Info section START -->
 		<section id="info">
 			<div class="info-container">
-				<div class="info-column">
+				<div class="info-column hideme">
 					<h3>church ceremony</h3>
 					<img src="assets/images/icons/church.png" alt="church">
 					<p>Love is friendship that has caught fire. It is quiet understanding, mutual confidence, sharing and forgiving. It is loyalty through good and bad times. It settles for less than perfection and makes allowances for human weaknesses.
 					</p>
 				</div>
-				<div class="info-column">
+				<div class="info-column hideme">
 					<h3>events calender</h3>
 					<img src="assets/images/icons/calendar.png" alt="calendar">
 					<p>We've got this gift of love, but love is like a precious plant. You can't just accept it and leave it in the cupboard or just think it's going to get on by itself. You've got to keep watering it. You've got to really look after it and nurture it.</p>
 				</div>
-				<div class="info-column">
+				<div class="info-column hideme">
 					<h3>wedding party</h3>
 					<img src="assets/images/icons/glasses.png" alt="glasses">
 					<p>We've got this gift of love, but love is like a precious plant. You can't just accept it and leave it in the cupboard or just think it's going to get on by itself. You've got to keep watering it. You've got to really look after it and nurture it.</p>
@@ -338,6 +340,7 @@
 				<div class="rsvp-link">
 					<button>RSVP NOW</button>
 				</div>
+				<!-- RSVP form apearing after RSVP NOW button click -->
 				<div class="rsvp-form">
 					<form method="POST">
 						<h3>SELECT THE EVENT(S) YOU WILL BE ATTENDING:</h3>
@@ -410,7 +413,7 @@
 					<ul>
 						<li><a href="#">Wedding</a></li>
 						<li><a href="#">Location</a></li>
-						<li><a href="#">Gift Registry</a></li>
+						<li><a href="#">Gifts</a></li>
 						<li><a href="#">Journal</a></li>
 					</ul>
 				</div>
@@ -422,8 +425,7 @@
 		<script src="assets/scripts/jquery.js"></script>
 		<script src="assets/scripts/owl.carousel.min.js"></script>
 		<script src="assets/scripts/jquery.countdown.js"></script>
-		<script src="assets/scripts/custom.js"></script>
-			
+		<script src="assets/scripts/custom.js"></script>		
 	</body>
 
 </html>
